@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c_back"
+    tools:context="com.ljh2017.ballnum.MainActivity">
+
+    <ImageView
+        android:id="@+id/Main"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/c_title" />
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/c_gamestart"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="clickStart"/>
+
+    <ImageView
+        android:id="@+id/howto"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/c_howplay"
+        android:layout_below="@id/start"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="clickHow"/>
+
+
+</RelativeLayout>

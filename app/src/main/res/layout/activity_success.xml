@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c_back"
+    tools:context="com.ljh2017.ballnum.SuccessActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="축하합니다!!"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다시하기"
+        android:backgroundTint="#abe6ba"
+        android:onClick="clickRe"/>
+
+    <Button
+        android:id="@+id/fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#abe6ba"
+        android:text="종료하기"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickFin"/>
+
+</RelativeLayout>

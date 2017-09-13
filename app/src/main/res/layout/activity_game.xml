@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c_back"
+    tools:context="com.ljh2017.ballnum.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/img_num1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/c_empty"/>
+        <ImageView
+            android:id="@+id/img_num2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/c_empty"/>
+        <ImageView
+            android:id="@+id/img_num3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/c_empty"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"/>
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"/>
+        <EditText
+            android:id="@+id/num3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"/>
+        <Button
+            android:id="@+id/checkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#65cf57"
+            android:text="입력"
+            android:textColor="#ffffff"
+            android:onClick="clickCheck"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_below="@id/line2">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
